@@ -1,5 +1,76 @@
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+
+    /* Ayuda momentanea*/
+
+
+    /*border: solid 2px red;*/
+
+    list-style: none;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 16pt;
+
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.title-1 {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+h1 {
+    padding: 0px 0px 16px 0px;
+}
+
+#section-article-1 {
+    text-align: center;
+    padding: 24pt;
+}
+
+#Ver-mas {
+    background-color: transparent;
+    border: solid 1px #F2BE5C;
+    border-radius: 10px;
+
+    padding: 10px 50px;
+    font-weight: 600;
+}
+
+.Beneficios {
+    text-align: center;
+}
+
+
 body {
+    /*background-image: linear-gradient(45deg, red. blue. 0.355);*/
+    /*background-image: url(/assets/img/pexels-photo-904616\ 1.png);
+    background-size: 100%;
+    background-repeat: repeat-y;*/
+
+}
+
+#jumbotron {
+    padding: 537px 637px 0px 0px;
+    
+}
+
+.Parrafos-azul {
+    color: #2C3359;
+}
+
+header {
     background-image: url(/assets/img/pexels-photo-904616\ 1.png);
+    background-size:cover;
+    padding: 24pt 60px;
 }
 
 #section-1 {
