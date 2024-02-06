@@ -9,7 +9,7 @@
     /* Ayuda momentanea*/
 
 
-    /*border: solid 2px red;*/
+    /* border: solid 2px red; */
 
     list-style: none;
     text-decoration: none;
@@ -31,37 +31,83 @@ h1 {
     padding: 0px 0px 16px 0px;
 }
 
-#section-article-1 {
+.section-article-1 {
     text-align: center;
     padding: 24pt;
 }
-
-#Ver-mas {
-    background-color: transparent;
-    border: solid 1px #F2BE5C;
-    border-radius: 10px;
-
-    padding: 10px 50px;
-    font-weight: 600;
-}
-
-.Beneficios {
-    text-align: center;
-}
-
 
 body {
     /*background-image: linear-gradient(45deg, red. blue. 0.355);*/
     /*background-image: url(/assets/img/pexels-photo-904616\ 1.png);
     background-size: 100%;
     background-repeat: repeat-y;*/
-
+    margin: 0;
 }
 
-#jumbotron {
-    padding: 537px 637px 0px 0px;
-    
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 15px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgba(242, 190, 92, 0.9);
+    transform: scale(1.1);
+}
+
+.jumbotron {
+    position: relative;
+    height: 89vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    font-size: 56px;
+    font-weight: 600;
+    width: 890px;
+}
+
+.Ver-mas {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: transparent;
+    border: solid 1px #F2BE5C;
+    border-radius: 10px;
+    width: 211px;
+    height: 59px;
+    padding: 10px 50px;
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s ease
+}
+
+.Ver-mas:hover {
+    background-color: rgba(242, 190, 92, 0.1);
+    transform: scale(1.1);
+}
+
+
 
 .Parrafos-azul {
     color: #2C3359;
@@ -73,14 +119,140 @@ header {
     padding: 24pt 60px;
 }
 
-#section-1 {
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #2C3359;
+    padding: 100px 184px;
+    color: #f2f2f2;
 }
 
-#section-2 {
+.section-article-1 {
+    flex: 1;
+    padding: 24pt;
+    box-sizing: border-box;
+}
+
+.section-1 img {
+    width: 35%;
+    margin: 0px 0px 0px 400px;
+    border-radius: 15px;
+}
+
+.section-1 h2 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 57px;
+}
+
+.section-1 p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 184px;
     background-color: #F2EDE4;
 }
 
+.Beneficios {
+    text-align: center;
+    flex: 1;
+    margin-right: 323px; 
+}
+
+.Beneficios:last-child {
+    margin-right: 0;
+}
+
+.Beneficios h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 13px 0;
+}
+
+.Beneficios p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
     background-color: #2C3359;
+    padding: 60px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-bottom: 1px solid #fff;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-right: 100px;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.footer-section p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: grow;
+    justify-content:end;
+    align-items: flex-end;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.social-media img {
+    max-width: 32px;
+}
+
+.copyright {
+    align-self: flex-end;
+    margin-top: 0px;
 }
