@@ -165,7 +165,7 @@ header {
 .Beneficios {
     text-align: center;
     flex: 1;
-    padding: 10%;
+    margin: 9%;
 }
 
 
@@ -178,6 +178,10 @@ header {
 .Beneficios p {
     font-size: 21px;
     font-weight: 400;
+}
+
+.Beneficios img {
+    max-width: 100%;
 }
 
 footer {
