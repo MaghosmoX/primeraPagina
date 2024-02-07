@@ -54,7 +54,7 @@ header nav ul {
     display: flex;
 }
 
-header nav ul li {
+header nav ul li a{
     margin: 15px;
     font-size: 19px;
     font-weight: 500;
@@ -81,11 +81,11 @@ nav ul li a:hover {
     position: absolute;
     bottom: 50px;
     left: 20px;
+    padding-right: 20%;
     margin: 0 0 20px 0;
     line-height: 1.2;
     font-size: 56px;
     font-weight: 600;
-    width: 890px;
 }
 
 .Ver-mas {
@@ -128,15 +128,17 @@ header {
     color: #f2f2f2;
 }
 
+
 .section-article-1 {
     flex: 1;
     padding: 24pt;
+    margin: 0 24px;
+    margin-right: 10%;
     box-sizing: border-box;
 }
 
 .section-1 img {
-    width: 35%;
-    margin: 0px 0px 0px 400px;
+    width: 40%;
     border-radius: 15px;
 }
 
@@ -157,19 +159,15 @@ header {
 .section-2 {
     display: flex;
     justify-content: space-between;
-    padding: 200px 184px;
     background-color: #F2EDE4;
 }
 
 .Beneficios {
     text-align: center;
     flex: 1;
-    margin-right: 323px; 
+    padding: 10%;
 }
 
-.Beneficios:last-child {
-    margin-right: 0;
-}
 
 .Beneficios h3 {
     font-size: 32px;
@@ -221,8 +219,8 @@ footer nav {
     align-self: flex-end;
 }
 
-.footer-section p {
-    font-size: 16px;
+.footer-section a {
+    font-size: 18px;
     font-weight: 500;
     line-height: 1;
 }
