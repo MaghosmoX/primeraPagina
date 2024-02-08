@@ -41,23 +41,20 @@ img {
     object-fit: cover;
 }
 
-.main-header-img {
-    position: absolute;
-    top: 0;
-}
+
+
 
 header {
-    padding: 24pt 60px;
+    padding: 24px 60px;
+    background-color: #2C3359;
 }
 
+
 header nav {
-    position: sticky;
-    left: 0;
-    top: 0;
+
+    justify-content: space-between;
     z-index: 10000;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
 }
 
@@ -90,16 +87,18 @@ h1 {
 }
 
 .jumbotron {
-    position: relative;
-    height: 89vh;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 90vh;
+    background-image: url(/assets/img/pexels-photo-904616\ 1.png);
+    background-size: cover;
+    padding: 30px 60px;
     overflow: hidden;
 }
 
 .jumbotron h1 {
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
     padding-right: 20%;
     margin: 0 0 20px 0;
     line-height: 1.2;
@@ -108,9 +107,6 @@ h1 {
 }
 
 .Ver-mas {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
     background-color: transparent;
     border: solid 1px #F2BE5C;
     border-radius: 10px;
@@ -131,8 +127,6 @@ h1 {
     color: #2C3359;
 }
 
-
-
 .section-1 {
     display: flex;
     align-items: center;
@@ -144,12 +138,12 @@ h1 {
 }
 
 .section-article-1 {
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
 .section-div-img {
-    width: 40%;
+    width: 50%;
 }
 
 .section-div-img img {
