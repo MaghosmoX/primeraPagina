@@ -26,9 +26,15 @@
 
 body {
     /*background-image: linear-gradient(45deg, red. blue. 0.355);*/
-    /*background-image: url(/assets/img/pexels-photo-904616\ 1.png);
-    background-size: 100%;
-    background-repeat: repeat-y;*/
+    height: 120vh;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(/assets/img/pexels-photo-904616\ 1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     margin: 0;
     overflow-x: hidden;
 }
@@ -46,16 +52,21 @@ img {
 
 header {
     padding: 24px 60px;
-    background-color: #2C3359;
+    background-color:transparent;
 }
 
 
 header nav {
-
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: space-between;
+    align-items: center;
     z-index: 10000;
     display: flex;
-    padding: 10px;
+    padding: 2% 5%;
+    height: 100px;
 }
 
 header nav img {
@@ -91,16 +102,13 @@ h1 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 90vh;
-    background-image: url(/assets/img/pexels-photo-904616\ 1.png);
-    background-size: cover;
-    padding: 30px 60px;
+    height: 95vh;
+    padding: 30px 5%;
     overflow: hidden;
 }
 
 .jumbotron h1 {
     padding-right: 20%;
-    margin: 0 0 20px 0;
     line-height: 1.2;
     font-size: 56px;
     font-weight: 600;
