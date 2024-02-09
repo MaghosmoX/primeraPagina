@@ -52,7 +52,6 @@ img {
 
 header {
     padding: 24px 60px;
-    background-color:transparent;
 }
 
 
@@ -67,7 +66,12 @@ header nav {
     display: flex;
     padding: 2% 5%;
     height: 100px;
+    background-color: transparent;
+    border-radius: 0 0 15px 15px;
 }
+
+
+  
 
 header nav img {
     width: 32px;
@@ -90,7 +94,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgba(242, 190, 92, 0.9);
-    font-size: 20px;
+}
+
+nav ul li {
+    transition: all 0.3s ease-in;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
 }
 
 h1 {
@@ -132,7 +143,7 @@ h1 {
 
 
 .Parrafos-azul {
-    color: #2C3359;
+    color: rgb(43, 50, 89);
 }
 
 .section-1 {
@@ -143,6 +154,13 @@ h1 {
     padding: 100px;
     color: #f2f2f2;
     gap: 200px;
+
+    @media (max-width: 724px) {
+        flex-direction: column-reverse;
+        padding: 24pt;
+    }
+
+
 }
 
 .section-article-1 {
@@ -152,6 +170,7 @@ h1 {
 
 .section-div-img {
     width: 50%;
+    min-width: 400px;
 }
 
 .section-div-img img {
@@ -174,7 +193,7 @@ h1 {
 
 .section-2 {
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(324px, 1fr));
     background-color: #F2EDE4;
     padding: 100px 0px;
 }
